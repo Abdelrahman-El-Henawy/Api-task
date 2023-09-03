@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- text font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- text font -->
+    <!-- style -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- style -->
+    <title>Document</title>
+</head>
+<body>
+    <!-- start navbar -->
+    <nav class="d-flex justify-content-between h-100">
+        <div class="left d-flex flex-column justify-content-between">
+            <ul class="list-unstyled">
+                <li class="position-relative"><a id="search" class="text-decoration-none text-capitalize p-1" href="#">search</a></li>
+                <li class="position-relative"><a id="category" class="text-decoration-none text-capitalize p-1" href="#">categories</a></li>
+                <li class="position-relative"><a id="area" class="text-decoration-none text-capitalize p-1" href="#">area</a></li>
+                <li class="position-relative"><a id="ingredients" class="text-decoration-none text-capitalize p-1" href="#">ingredients</a></li>
+                <li class="position-relative"><a id="contact" class="text-decoration-none text-capitalize p-1" href="#">contact us</a></li>
+            </ul>
+            <div class="bottom p-4">
+                <div>
+                    <i class="fa-brands fa-facebook text-white"></i>
+                    <i class="fa-brands fa-twitter text-white"></i>
+                    <i class="fa-solid fa-globe text-white"></i>
+                </div>
+                <p class="text-white">Copyright Â© 2019 All Rights Reserved
+                </p>
+            </div>
+        </div>
+        <div class="right bg-white p-2 d-flex justify-content-between align-items-center flex-column">
+            <div class="photo pt-3">
+                <img class="w-100" src="./imgs/logo.png" alt="">
+            </div>
+            <div class="icons1 d-flex justify-content-center align-items-center flex-column">
+                <i class="fa-solid fa-bars fa-2x"></i>
+                <i class="fa-solid fa-xmark fa-2x"></i>
+            </div>
+            <div class="icons2 d-flex justify-content-center align-items-center flex-column pb-3">
+                <i class="fa-solid fa-globe mb-2"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- start section -->
+    <div class="container py-5 pt-5">
+        <div class="loadingPage position-fixed start-0 end-0 d-flex justify-content-center align-items-center top-0 bottom-0">
+            <i class="fa-solid fa-spinner fa-spin fa-6x text-white"></i>
+        </div>
+        <div class="row gy-4 pb-3" id="searchHtml">
+        </div>
+        <div class="row gy-4" id="rowData">
+        </div>
+        <!-- <div class="row gy-4 d-none" id="rowData1">
+            <div class="d-flex mainDiv">
+                <div class="input1 w-50">
+                    <input type="search" id="searchName" placeholder="Search by Name">
+                    <button id="searchBtn" class="btn btn1 btn-outline-warning">Search</button>
+                </div>
+                <div class="input1 w-50">
+                    <input type="search" id="searchNameInput" onkeyup="searchByName()" placeholder="Search by letter">
+                </div>
+            </div>
+        </div> -->
+
+        <div class="row gy-4 d-none" id="rowData2">
+            <div class="col-md-6">
+                <div class="d-flex justify-content-center flex-column align-items-center">
+                    <input type="text" class="mb-3" placeholder="Enter Your Name" id="inputNameContact">
+                    <div id="invalidName" class="invalidDiv d-none">
+                        <p class="">please start with capital letter</p>
+                    </div>
+                    <input type="text" class="mb-3" placeholder="Enter Your Number" id="inputNumberContact" minlength="8" maxlength="12">
+                    <div id="invalidNumber" class="invalidDiv d-none">
+                        <p class="">Number must be 8 to 12 numbers</p>
+                    </div>
+                    <input type="password" class="mb-3" placeholder="Enter Your Password" id="inputPassword1">
+                    <div id="invalidPassword" class="invalidDiv d-none">
+                        <p class="">please enter a complicated password from 8 to 15 chars</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex justify-content-center flex-column align-items-center">
+                    <input type="email" class="mb-3" placeholder="Enter Your Email" id="inputEmail">
+                    <div id="invalidEmail" class="invalidDiv d-none">
+                        <p class="">Email not valid *exemple@yyy.zzz</p>
+                    </div>
+                    <input type="number" class="mb-3" placeholder="Enter Your Age" id="inputAge">
+                    <div id="invalidAge" class="invalidDiv d-none">
+                        <p class="">Age must be 19 to 44</p>
+                    </div>
+                    <input type="password" class="mb-3" placeholder="Re-write Your Password" id="inputPassword2">
+                    <div id="unmatchedPassword" class="invalidDiv d-none">
+                        <p class="">passwords are not matched</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-outline-warning w-25 m-auto mt-5">submit</button>
+        </div>
+    </div>
+    
+    <!-- end section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
